@@ -33,4 +33,8 @@ public class EmployeeService {
         }
         return false;
     }
+
+    public Employee findBuUsername(String username){
+        return repository.findByUsername(username);
+    }
 }
